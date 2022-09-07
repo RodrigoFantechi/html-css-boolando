@@ -1,5 +1,189 @@
-*{
+
+/* #region Common Rules */
+
+
+:root {
+    --clr-black: #000000;
+    --clr-secondary: #008000;
+    --clr-dark: #1A1A1A;
+    --clr-primary: #FF0000;
+    --clr-nav: #FF6900;
+    --clr-white: #FFFFFF;
+
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion Common Rules */
+
+/* #region Utilities */
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+header {
+    background-color: var(--clr-nav);
+    color: var(--clr-white);
+    padding: 1rem;
+    display: fixed;
+}
+
+header .row {
+    justify-content: space-between;
+}
+
+header img {
+    width: 8.5rem;
+}
+
+nav {
+    text-align: center;
+
+}
+
+/* #endregion Header */
+
+/* #region Main */
+main {
+    padding-top: 3rem;
+}
+
+.card:hover .img_default {
+    display: none;
+}
+
+.card:hover .img_on_hover {
+    display: block;
+}
+
+.img_default {
+    display: block;
+}
+
+.img_on_hover {
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--clr-white);
+
+}
+
+main .picture {
+    position: relative;
+}
+
+main .col-4 {
+    padding: 0.5rem;
+}
+
+.discount {
+    background-color: var(--clr-primary);
+    float: left;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+
+}
+
+.discount_sostenibility {
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    color: var(--clr-white);
+
+}
+
+.sostenibility {
+    background-color: var(--clr-secondary);
+    float: left;
+    padding: 0.3rem;
+}
+
+.discounted_price {
+    color: var(--clr-primary);
+}
+
+.full_price {
+    text-decoration: line-through;
+}
+
+.details * {
+    margin: 0.2rem;
+}
+
+
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
+
+/* #region Grid Flexbox */
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+/* #endregion Grid Flexbox */
